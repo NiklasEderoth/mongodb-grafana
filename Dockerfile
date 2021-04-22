@@ -4,4 +4,4 @@ FROM node:alpine as builder
 RUN apk add --no-cache python make g++
 COPY . ./
 RUN npm install
-CMD ["node", "dist/server/mongodb-proxy.js"]
+CMD ["npm", "run", "server"]
